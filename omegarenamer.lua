@@ -75,7 +75,7 @@ ashita.register_event('load', function()
     local response = {}
     http.request{
         method = "GET",
-        url = "https://xi-omega-renamer.s3.us-east-2.amazonaws.com/map.lua",
+        url = "https://omega-renamer.s3.amazonaws.com/omega.lua",
         sink = ltn12.sink.table(response)
     }
     local remoteMap = table.concat(response)
